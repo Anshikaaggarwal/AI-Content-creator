@@ -1,0 +1,11 @@
+scrapetube
+feedparser
+google-genai
+streamlit
+python-dotenv
+requests
+beautifulsoup4
+selenium
+webdriver-manager
+ntscraper
+apify-client
