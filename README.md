@@ -63,3 +63,40 @@ APIFY_TOKEN=...
 APIFY_TWITTER_ACTOR_ID=...        # e.g. sovereigntaylor/twitter-scraper or another actor ID
 APIFY_TWITTER_TASK_ID=...         # optional: saved task ID with “Maximum cost per run”
 TWITTER_CACHE_PATH=data/twitter_web3.json
+```
+
+---
+
+## Run locally
+
+This project is a single-process Streamlit app. You do NOT need `uvicorn` unless you add a separate FastAPI/Flask backend.
+
+1) Activate your virtual environment:
+
+```bash
+venv\Scripts\activate
+```
+
+2) Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3) Run the Streamlit app:
+
+```bash
+python -m streamlit run app.py
+```
+
+Then open:
+
+```text
+http://localhost:8501
+```
+
+
+```bash
+python -m streamlit run app.py --server.port 8502
+```
+
